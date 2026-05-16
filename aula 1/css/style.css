@@ -1,0 +1,93 @@
+/*aula 01 -css para pagina de boas vinda metadoliga : MOBILE-FIRSTE - estilo base são otimizados para CELULARES (viexpot pequeno)- telas maiores recebem ajutes via media queris - garante boas esprerias em  qualquer dispositivo
+estrutura do css:
+estilo global (body,fontes)
+estilo do hader (cabeçario)
+estilo do mein (conteudo principal)
+estilo ds elemento (img, p, buttons)
+estilo do footer (roddape)
+media queries para desktop (ao final do arquivo) */
+
+/*estilo globais (base mobile)*/
+
+/* reset básico de estilos e ajuste do box model para toda a pagina*/
+
+
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cfdee0;
+    margin: 1%;
+    padding: 20px;
+    text-align: center;
+
+
+}
+header {
+    border-radius: 40px;
+    background-color: #497ef0;
+    padding: 15px;
+    border: 15px;
+    margin-bottom: 19px;
+    margin-bottom: 50px;
+}
+h1   {
+    font-size: 1.8em; 
+
+ }
+
+/* estilo da main - (conteudo principal)*/
+main{
+    padding:30px 15px; /* estilos dos elementos */
+    /* Estilo da img */
+}
+img {
+    width: 100%; /*para imagem ocupar 100% do espaço de largura*/
+     max-width: 300px; /* o tamano maximo da nossa imagem*/
+     border-radius: 19px; /*bordas arredondadas*/
+     margin-bottom: 20px; /*espaçamento externo e,baixo da imagem*/
+     box-shadow: 0 4px 8px rgb(0, 0, 0 0.1); /*sombras sutil de produndidade*/
+}
+/* estilo dos parágrafos */
+
+p {
+   font-size: 1rem; /*tamanho de fonte*/
+   margin-bottom: 30px; /*espaçamanto abaixo do parágarfo*/
+   line-height: 1.5; /*Espaçamento abaixo entre linhas para ocupar toda a largura*/
+}
+
+/* estilo do botão */
+.button {
+display:block ; /*Display block faz o link ocupar toda a largura disponovel*/
+background-color: rgb(29, 207, 207); /*cor de fondo*/
+color: #000000; /*cor do txto*/
+
+padding: 10px; /*espaçamento interno*/
+text-decoration: name; /*para tirar a decoração dos links*/
+border-radius: 5px; /*bosdar arredondadas*/
+font-weight: bolt; /*peso da fonte*/
+transition: background-colar 0.3s ease; /*transição suave da cor de fudo*/
+
+}
+
+footer {
+
+    background-color: #3181e9; /*cor de fundo*/
+    color: rgb(0, 0, 0); /*cor do texto*/
+    padding: 15px 0; /*espaçamento interno*/
+    width: 100%; /*largura de 100%*/
+}
+
+/*madia query: telas maires (desktop)*/
+@media (min-windth: 768) {
+h1 {
+font-size: 1.2rem;
+max-width:  600px; /*maximo de largura*/
+margin: 0 auto 30px; /*ajustenddo o espaçamento externo*/
+
+}    
+.button {
+    display: inline-block; /*botão volta a ser prqueno para desktop*/
+    padding: 15px 40px; /*espaçamento interno*/
+}
+footer{
+    position: fixed; /*posicionamento do elemeto fixado */
+}
+}
