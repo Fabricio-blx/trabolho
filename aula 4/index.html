@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--ULA 04 - FORMULÁRIOS DE INSCRIÇÃO Objetivo: Criar um formulario responsive e bem estruturado usando THML s-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 04 - Formolário de inscrição</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    
+<div class="form-wrapper"
+    
+<!-- FORMULARIO PRINCINPAL -->
+<!-- tag semãntica <form> indica que em formulário Atributos utilizados
+-mthod : como enviar os dados ( GET ou POST )
+-action: para onde enviar os dados
+ -->
+<form class="evnt-form">
+<!--Titulo do formulario-->
+    <h2> inscrição tech summit</h2>
+    
+    <!--GRUPO DE FORMULARIO-->
+    <!--cada input é envolvido em uma div (form-group) para melhor organização-->
+    <div class="form-group">
+        <!--LABEL - (Rótulo)-->
+        <!-- Impotante para acessiblidade o atributo (for) conectar ao id do input
+         quando o usuario clina no label, o input recebe o foco-->
+         <label for="name">nome completo</label>
+<!--INPUT TYPE="TEXT" ( compo de Texto)-->
+<!-- 
+      -id : inddentificado unico  (conecta ele com label)
+      type: tipo de entrada  de dados (text = texto semples)
+      
+      placeholde: campo obrigatorio (Não  permite enviar o formulario com o campo vazio)-->
+         <input type="text" id="name" placeholder="nome completo" required/>
+    </div>
+    <!-- Grupo do nosso email-->
+<div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" placeholder="seuemail@email,com" >
+</div>
+
+<!-- Grupo 3 SELECT ( SELEÇÃO )-->
+<div class="form-group">
+      <label for="erea">Àrea de interesse</label>
+      <!-- permite que o usuario escolha uma opção de uma lista pré-definida-->
+       <select id=""area>
+        <!--Opções de dropdown-->
+        <!--value: valor enviado no formulario (não é o que)-->
+        <option value="selecione uma opção"></option>
+        <option value="fronten">front-end</option>
+       </select>
+</body>
+</html>
