@@ -68,7 +68,7 @@ label {
     font-weight: bold;
 }
 
-input, select , textarea {
+input, select, textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -79,9 +79,30 @@ button{
     width: 100%;
     padding: 15px;
     background-color: blue;
-    color: white
-    border: nane;
+    color: white;
+    border: none;
     border-radius: 6px;
     font-size: 1.4rem;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*media querys*/
+
+@media (min-width: 768px) {
+    body {
+        /* Alinhando o formulário no centro da tela (desktop) */
+        align-items: center;
+    }
+
+    .form-wrapper {
+        /* Adicionando um gradiente de fundo para desktop */
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+        background-color: darkblue;
+    }
 }
