@@ -25,6 +25,10 @@ body {
     font-family: 'inter', sans-serif;
     background-color: #0977f5;
     padding: 20px;
+body {
+    font-family: 'Iosevka Charon', sans-serif;
+    background-color: #0977f5;
+    padding: 20px;
     /* 
         FLEXBOX: Centralizar o formulario
         justify-content: center = centralizando horizontalmente
@@ -94,15 +98,17 @@ button{
     body {
         /* Alinhando o formulário no centro da tela (desktop) */
         align-items: center;
+  /* garantindo que o fundo do body tenha um gradiente */
+        background: linear-gradient(135deg, rgb(1, 1, 145) 0%, rgb(0, 183, 255) 100%);
     }
 
     .form-wrapper {
-        /* Adicionando um gradiente de fundo para desktop */
-        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        padding: 40px;
+        box-shadow: 0 40px 35px rgba(0, 0, 0, 0.418);
     }
 
     button:hover {
-        background-color: darkblue;
+        background-color: #008cff;
+        transition: background-color .8s ease;
     }
 }
